@@ -8,7 +8,7 @@ The Notely API uses JSON Web Tokens (JWT) for authentication. You will need to o
 
 **Example:**
 
-```json
+```bash
 POST /api/auth/login HTTP/1.1
 Content-Type: application/json
 
@@ -30,7 +30,7 @@ Store the returned token in a secure location and include it in the `Authorizati
 
 **Example:**
 
-```json
+```bash
 GET /api/notes HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJleHAiOjE2NzM2MzA3MTd9.z9g1-507hZ4w6g448tO752v07d8q288yE4c31098
 ```
@@ -161,8 +161,10 @@ The response will be a JSON object containing the following information about th
 
 **Request:**
 
+```bash
 GET /api/notes/1 HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJleHAiOjE2NzM2MzA3MTd9.z9g1-507hZ4w6g448tO752v07d8q288yE4c31098
+```
 
 **Response:**
 
@@ -211,7 +213,7 @@ The request body should be a JSON object with the following properties:
 
 **Example Request:**
 
-```json
+```bash
 POST /api/notes HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJleHAiOjE2NzM2MzA3MTd9.z9g1-507hZ4w6g448tO752v07d8q288yE4c31098
 Content-Type: application/json
@@ -282,7 +284,7 @@ The request body should be a JSON object containing the properties you want to u
 
 **Example Request:**
 
-```json
+```bash
 PUT /api/notes/1 HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJleHAiOjE2NzM2MzA3MTd9.z9g1-507hZ4w6g448tO752v07d8q288yE4c31098
 Content-Type: application/json
@@ -349,14 +351,14 @@ The response will be an empty body with status code 204 No Content.
 
 **Example:**
 
-
+```bash
 DELETE /api/notes/1 HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJleHAiOjE2NzM2MzA3MTd9.z9g1-507hZ4w6g448tO752v07d8q288yE4c31098
-
+```
 
 **Response:**
 
-```
+```bash
 HTTP/1.1 204 No Content
 ```
 
@@ -400,7 +402,7 @@ The request body should be a JSON object containing the property you want to upd
 
 **Example Request:**
 
-```json
+```bash
 PUT /api/notes/1/complete HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJleHAiOjE2NzM2MzA3MTd9.z9g1-507hZ4w6g448tO752v07d8q288yE4c31098
 Content-Type: application/json
@@ -491,8 +493,10 @@ The response will be a JSON object containing an array of category objects. Each
 
 **Request:**
 
+```bash
 GET /api/categories HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJleHAiOjE2NzM2MzA3MTd9.z9g1-507hZ4w6g448tO752v07d8q288yE4c31098
+```
 
 **Response:**
 
@@ -543,7 +547,7 @@ The request body should be a JSON object with the following property:
 
 **Example Request:**
 
-```json
+```bash
 POST /api/categories HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJleHAiOjE2NzM2MzA3MTd9.z9g1-507hZ4w6g448tO752v07d8q288yE4c31098
 Content-Type: application/json
@@ -609,7 +613,7 @@ The request body should be a JSON object containing the property you want to upd
 
 **Example Request:**
 
-```json
+```bash
 PUT /api/categories/1 HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJleHAiOjE2NzM2MzA3MTd9.z9g1-507hZ4w6g448tO752v07d8q288yE4c31098
 Content-Type: application/json
@@ -667,14 +671,14 @@ The response will be an empty body with status code 204 No Content.
 
 **Example:**
 
-
+```bash
 DELETE /api/categories/1 HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJleHAiOjE2NzM2MzA3MTd9.z9g1-507hZ4w6g448tO752v07d8q288yE4c31098
-
+```
 
 **Response:**
 
-```
+```bash
 HTTP/1.1 204 No Content
 ```
 
