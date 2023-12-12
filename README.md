@@ -16,6 +16,7 @@ Notely is a simple and efficient Note Management System designed to help users c
 - **Python:** 3.9 or later
 - **Django:** 5.0
 - **Django Rest Framework:** 3.14.0
+- **djangorestframework-simplejwt** 5.3.1
 - **python-dotenv:** 1.0.0
 
 ## Installation
