@@ -75,4 +75,4 @@ Refer to the provided API documentation for detailed information on available en
 
 ## API Documentation
 
-Explore the [Notely REST API Documentation](api-doca.md) for comprehensive details on using the API, including authentication, available endpoints, and example requests and responses.
+Explore the [Notely REST API Documentation](api-docs.md) for comprehensive details on using the API, including authentication, available endpoints, and example requests and responses.
