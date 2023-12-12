@@ -11,6 +11,12 @@ Notely is a simple and efficient Note Management System designed to help users c
 - **Categories:** Organize your notes by assigning them to specific categories.
 - **List Notes:** Retrieve a list of all notes for the authenticated user with optional filtering by category and completion status.
 
+## Requirements
+
+- **Python:** 3.9 or later
+- **Django Rest Framework:** 3.14
+- **python-dotenv:** Latest version
+
 ## Installation
 
 To set up the Notely project on your local machine, follow these steps:
