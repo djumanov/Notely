@@ -46,6 +46,7 @@ Here is a summary of some of the available API endpoints:
 | /api/notes        | POST         | Creates a new note.                                        |
 | /api/notes/{id}   | PUT          | Updates an existing note.                                   |
 | /api/notes/{id}   | DELETE       | Deletes a note by its ID.                                     |
+| /api/notes/{id}/complete   | PUT       | Update the completion status of a specific note.                                     |
 | /api/categories   | GET          | Retrieves a list of all categories.                          |
 | /api/categories   | POST         | Creates a new category.                                    |
 | /api/categories/{id}   | PUT          | Updates an existing category.                              |
