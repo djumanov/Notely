@@ -3,7 +3,7 @@
 FROM --platform=$BUILDPLATFORM python:3.7-alpine AS builder
 EXPOSE 8000
 WORKDIR /Notely/core
-COPY requirements.txt /app
+COPY requirements.txt /Notely/core/
 RUN pip3 install -r requirements.txt --no-cache-dir
 COPY . /Notely/core
 ENTRYPOINT ["python3"] 
