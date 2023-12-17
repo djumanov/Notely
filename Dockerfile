@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-WORKDIR /Notely/core
+WORKDIR /core
 
 RUN pip install --no-cache-dir -r requirements.txt
 
